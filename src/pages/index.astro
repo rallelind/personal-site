@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,15 +12,21 @@ import Layout from '../layouts/Layout.astro';
 			<h1 class="text-3xl font-md">Hello my name is Rasmus 👋</h1>
 			<p class="text-lg font-light text-slate-600">I am a software developer based in Copenhagen. I specialize in fullstack development and i love to take features from idea to production.</p>
 		</div>
-		<div>
+		<div class="flex flex-col gap-4">
+			<div class="bg-orange-50 p-4 rounded-lg shadow-sm flex gap-4">
+				<img src="/pandektes-logo.JPG" class="h-12 rounded-lg" />
+				<div>
+					<p>Pandektes (december 2023 - present)</p>
+					<p class="text-sm font-light text-slate-600">First full time developer hired as full stack developer to build a awesome legal tech product!</p>
+				</div>
+			</div>
 			<div class="bg-orange-50 p-4 rounded-lg shadow-sm flex gap-4">
 					<img src="/boostlingo-logo.jpeg" class="h-12 rounded-lg" />
 					<div>
-						<p>Boostlingo (april 2022 - present)</p>
+						<p>Boostlingo (april 2022 - december 2023)</p>
 						<p class="text-sm font-light text-slate-600">Currently i am building real time software at Boostlingo. I have build out self serving payment services, optimized code and rewritten old code bases</p>
 					</div>
 			</div>
 		</div>
 	</div>
 </Layout>
-
